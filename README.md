@@ -1,20 +1,24 @@
-[![Build Status](https://github.com/cerner/clara-rules/actions/workflows/clojure.yml/badge.svg)](https://github.com/cerner/clara-rules/actions/workflows/clojure.yml)
+# concrete-rules
 
-# Project name
+**`concrete-rules`** Forward-chaining rules for Clojure and the JVM. It is a sovereign fork of the original [Clara Rules](https://github.com/oracle-samples/clara-rules) project.
 
-clara-rules - it's a forward-chaining rules in Clojure(Script)
+### History & Attribution
+
+This project is a derivative work based on Clara Rules, originally developed by Cerner and Oracle. All original code remains Copyright (c) 2018-2025 Oracle and/or its affiliates. All subsequent improvements and maintenance are Copyright (c) 2026 Michael Rodriguez.
+
+---
 
 ## _About_
 
-Clara is a forward-chaining rules engine written in Clojure(Script) with Java interoperability. It aims to simplify code with a developer-centric approach to expert systems. See [clara-rules.org](http://www.clara-rules.org) for more.
+concrete-rules is a forward-chaining rules engine written in Clojure with Java interoperability. It aims to simplify code with a developer-centric approach to expert systems.
 
 ## _Usage_
 
-Here's a simple example. Complete documentation is at [clara-rules.org](http://www.clara-rules.org/docs/firststeps/).
+Here's a simple example:
 
 ```clj
-(ns clara.support-example
-  (:require [clara.rules :refer :all]))
+(ns metasimple.concrete.support-example
+  (:require [concrete.rules :refer :all]))
 
 (defrecord SupportRequest [client level])
 
@@ -47,32 +51,25 @@ Here's a simple example. Complete documentation is at [clara-rules.org](http://w
 
 ## _Building_
 
-Clara is built, tested, and deployed using [Leiningen](http://leiningen.org). 
-ClojureScript tests are executed via [puppeteer](https://pptr.dev/). 
-``` 
-npm install -g puppeteer
-npx puppeteer browsers install chrome
-```
+Concrete is built, tested, and deployed using [Leiningen](http://leiningen.org).
 
 ## _Availability_
 
-Clara releases are on [Clojars](https://clojars.org/). Simply add the following to your project:
+concrete-rules releases are on [Clojars](https://clojars.org/). Simply add the following to your project:
 
-[![Clojars Project](http://clojars.org/com.cerner/clara-rules/latest-version.svg)](http://clojars.org/com.cerner/clara-rules)
+[![Clojars Project](http://clojars.org/org.metasimple/concrete-rules/latest-version.svg)](http://clojars.org/org.metasimple/concrete-rules)
 
 ## _Communication_
 
-Questions can be posted to the [Clara Rules Google Group](https://groups.google.com/forum/?hl=en#!forum/clara-rules) or the [Slack channel](https://clojurians.slack.com/messages/clara/).  
+Questions can be posted to the [Slack channel](https://clojurians.slack.com/messages/clara/).
 
 ## Contributing
 
 This project welcomes contributions from the community. Before submitting a pull request, please [review our contribution guide](./CONTRIBUTING.md)
 
-## Security
-
-Please consult the [security guide](./SECURITY.md) for our responsible security vulnerability disclosure process
-
 ## License
+
+Copyright (c) 2026 Michael Rodriguez / org.metasimple
 
 Copyright (c) 2018, 2025 Oracle and/or its affiliates.
 

@@ -17,5 +17,5 @@ Releasing the project requires these steps:
 8. Push the new tag to the repo.
 
 [clojars]: https://clojars.org
-[release-site]: https://clojars.org/com.cerner/clara-rules
+[release-site]: https://clojars.org/org.metasimple/concrete-rules
 
