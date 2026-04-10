@@ -1,4 +1,4 @@
-(defproject org.metasimple/concrete-rules "0.1.0-SNAPSHOT"
+(defproject org.metasimple/concrete-rules "0.1.0"
   :description "A deterministic Rete rules engine for Clojure."
   :url "https://metasimple.org/concrete-rules"
   :license {:name "Apache License Version 2.0"
