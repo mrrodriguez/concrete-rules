@@ -1,0 +1,7 @@
+{:lint-as {metasimple.concrete.rules/defsession clojure.core/def
+           metasimple.concrete.rules.platform/eager-for clojure.core/for}
+ :hooks {:analyze-call {metasimple.concrete.rules/defquery hooks.concrete-rules/analyze-defquery-macro
+                        metasimple.concrete.rules/defrule hooks.concrete-rules/analyze-defrule-macro
+                        metasimple.concrete.rules.dsl/parse-query hooks.concrete-rules/analyze-parse-query-macro
+                        metasimple.concrete.rules.dsl/parse-rule hooks.concrete-rules/analyze-parse-rule-macro
+                        metasimple.concrete.tools.testing-utils/def-rules-test hooks.concrete-rules/analyze-def-rules-test-macro}}}
