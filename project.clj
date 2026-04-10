@@ -39,4 +39,8 @@
   :deploy-repositories [["releases" {:url "https://repo.clojars.org"
                                      :username :env/CLOJARS_USERNAME
                                      :password :env/CLOJARS_PASSWORD
-                                     :sign-releases true}]])
+                                     :sign-releases true}]
+                        ["snapshots" {:url "https://repo.clojars.org"
+                                      :username :env/CLOJARS_USERNAME
+                                      :password :env/CLOJARS_PASSWORD
+                                      :sign-releases true}]])
