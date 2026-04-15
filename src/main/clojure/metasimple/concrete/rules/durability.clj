@@ -9,15 +9,14 @@
    Note! This is still an EXPERIMENTAL namespace. This may change non-passively without warning.
    Any session or rulebase serialized in one version of Concrete Rules is not guaranteed to deserialize 
    successfully against another version of Concrete Rules."
+  (:refer-clojure :exclude [update-vals])
   (:require
-    [clojure.set :as set]
     [metasimple.concrete.rules.compiler :as com]
     [metasimple.concrete.rules.engine :as eng]
     [metasimple.concrete.rules.memory :as mem]
     [schema.core :as s])
   (:import
     (java.util
-      IdentityHashMap
       List
       Map)
     (metasimple.concrete.rules.compiler

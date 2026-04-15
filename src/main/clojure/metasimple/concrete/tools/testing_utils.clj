@@ -173,9 +173,9 @@
 (defn get-all-ex-data
   "Walk a Throwable chain and return a sequence of all data maps
   from any ExceptionInfo instances in that chain."
-  [e]
+  [^Throwable e]
   (let [get-ex-chain (fn get-ex-chain
-                       [e]
+                       [^Throwable e]
                        (if-let [cause (.getCause e)]
                          (conj (get-ex-chain cause) e)
                          [e]))]

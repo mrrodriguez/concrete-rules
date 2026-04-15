@@ -49,6 +49,8 @@ Here's a simple example:
 ;; Notify Alice that Acme has a new support request!
 ```
 
+For more examples of the various rule combinations and patterns possible with the DSL, see the [DSL Examples](./dsl-examples.md) guide.
+
 ## _Building_
 
 Concrete is built, tested, and deployed using [Leiningen](http://leiningen.org).

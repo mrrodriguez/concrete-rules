@@ -20,3 +20,5 @@ figwheel_server.log
 node_modules/*
 fork-setup
 .nrepl-port
+.aider*
+notes

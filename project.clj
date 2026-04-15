@@ -1,4 +1,4 @@
-(defproject org.metasimple/concrete-rules "0.1.0"
+(defproject org.metasimple/concrete-rules "0.1.1-SNAPSHOT"
   :description "A deterministic Rete rules engine for Clojure."
   :url "https://metasimple.org/concrete-rules"
   :license {:name "Apache License Version 2.0"
@@ -23,10 +23,10 @@
   :test-selectors {:default (complement (fn [x]
                                           (let [blacklisted-packages #{"generative" "performance"}
                                                 patterns (into []
-                                                               (comp
-                                                                (map #(str "^metasimple\\.concrete\\." % ".*"))
-                                                                (interpose "|"))
-                                                               blacklisted-packages)]
+                                                           (comp
+                                                             (map #(str "^metasimple\\.concrete\\." % ".*"))
+                                                             (interpose "|"))
+                                                           blacklisted-packages)]
                                             (some->> x :ns ns-name str (re-matches (re-pattern (apply str patterns)))))))
                    :generative (fn [x] (some->> x :ns ns-name str (re-matches #"^metasimple\.concrete\.generative.*")))
                    :performance (fn [x] (some->> x :ns ns-name str (re-matches #"^metasimple\.concrete\.performance.*")))}
