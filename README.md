@@ -12,6 +12,12 @@ This project is a derivative work based on Clara Rules, originally developed by 
 
 concrete-rules is a forward-chaining rules engine written in Clojure with Java interoperability. It aims to simplify code with a developer-centric approach to expert systems.
 
+## _Availability_
+
+concrete-rules releases are on [Clojars](https://clojars.org/). Simply add the following to your project:
+
+[![Clojars Project](http://clojars.org/org.metasimple/concrete-rules/latest-version.svg)](http://clojars.org/org.metasimple/concrete-rules)
+
 ## _Usage_
 
 Here's a simple example:
@@ -55,12 +61,6 @@ For more examples of the various rule combinations and patterns possible with th
 
 Concrete is built, tested, and deployed using [Leiningen](http://leiningen.org).
 
-## _Availability_
-
-concrete-rules releases are on [Clojars](https://clojars.org/). Simply add the following to your project:
-
-[![Clojars Project](http://clojars.org/org.metasimple/concrete-rules/latest-version.svg)](http://clojars.org/org.metasimple/concrete-rules)
-
 ## _Communication_
 
 Questions can be posted to the [Slack channel](https://clojurians.slack.com/messages/clara/).
@@ -71,7 +71,7 @@ This project welcomes contributions from the community. Before submitting a pull
 
 ## License
 
-Copyright (c) 2026 Michael Rodriguez / org.metasimple
+Copyright (c) 2026 Michael Rodriguez / [org.metasimple](https://www.metasimple.org/)
 
 Copyright (c) 2018, 2025 Oracle and/or its affiliates.
 
